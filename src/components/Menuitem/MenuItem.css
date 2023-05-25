@@ -1,0 +1,15 @@
+.app__menuitem-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__menuitem-bar{
+    height: 1px;
+    width: 70px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.app__menuitem-tags{
+    color: var(--color-grey);
+    margin-bottom: 2rem;
+}

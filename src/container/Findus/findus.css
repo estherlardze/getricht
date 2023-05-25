@@ -1,0 +1,84 @@
+.app__findus{
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-white);
+}
+.app__findus-image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app__findus-content{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 1rem;
+}
+.app__findus-image img{
+   width: 600px;
+   height: 600px;
+}
+
+.p__findus,
+.p__findus-time{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+    margin: 3rem 0 2rem 0;
+  }
+  .p__findus-time{
+    margin: 1rem 0;
+  }
+
+ @media screen and (max-width: 1200px){
+    .app__findus-image img{
+        width: 500px;
+        height: 550px;
+     }
+ 
+ }
+ @media screen and (max-width: 1100px){
+    .app__findus-image img{
+        width: 400px;
+        height: 450px;
+     }
+ 
+ }
+ @media screen and (max-width: 950px){
+    .app__findus-image img{
+        width: 350px;
+        height: 400px;
+     }
+ 
+ }
+
+  @media screen and (max-width:900px){
+    .app__findus{
+        flex-direction: column;
+    }
+    .app__findus-image{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .app__findus-image img{
+        width: 100%;
+        margin-top: 2rem;
+        height: 500px;
+    }
+   
+  }
+  @media screen and (max-width: 400px){
+    .app__findus-image img{
+        height: 400px;
+    }
+   
+  }

@@ -1,0 +1,115 @@
+.app__gallery{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.app__gallery-content{
+    margin-right: 2rem;
+    min-width: 500px;
+}
+.app__gallery-content button{
+    margin: 1rem;
+}
+.app__gallery-content p{
+    color: var(--color-grey);
+    font-family: var(--font-alt);
+    margin: 1.5rem 0 1rem 0;
+}
+.app__gallery-images{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    min-width: 50%;
+}
+.app__gallery-images_container{
+    display: flex;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.app__gallery-images_container::-webkit-scrollbar{
+    display: none;
+}
+.app__gallery-imageCard{
+    min-width: 301px;
+    height: 400px;
+    margin-right: 2rem;
+    position: relative;
+}
+.app__gallery-imageCard img{
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   object-fit: cover;
+   transition: .5s ease;
+}
+.app__gallery-imageCard:hover img{
+    opacity: .35;
+}
+.app__gallery-instagram_icon{
+  font-size: 2rem;
+  position: absolute;
+  cursor: pointer;
+  opacity: .5rem;
+  opacity: .3;
+  transform: .5s ease;
+}
+.app__gallery-imageCard:hover .app__gallery-instagram_icon{
+    opacity: 1;
+}
+
+.app__gallery-arrows{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    align-items: center;
+}
+.app__gallery-icon{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+@media screen and (min-width:2000px){
+    .app__gallery-content{
+        margin-right: 4rem;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width:1100px){
+   .app__gallery{
+    flex-direction: column;
+   } 
+   .app__gallery-content{
+    min-width: 100%;
+    margin-bottom: 4rem;
+}
+.app__gallery-images{
+    width: 100%;
+}
+}
+@media screen and (max-width:650px){
+    .app__gallery-content{
+        margin-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .app__gallery-imageCard{
+        min-width: 302px;
+    }   
+    .app__gallery-imageCard{
+        margin-right: 1rem;
+   }
+}

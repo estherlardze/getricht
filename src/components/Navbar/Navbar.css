@@ -1,0 +1,125 @@
+.app__navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-black);
+  color: #fff;
+  width: 100%;
+}
+.app__navbar-image{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.app__navbar-image img{
+    width: 100%;
+    cursor: pointer;
+}
+.app__navbar-links{
+    display: flex;   
+}
+.app__navbar-image{
+    margin-right: 3rem;
+}
+.app__navbar-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app__navbar-links li{
+   list-style: none;
+   margin: 0 10px;
+}
+.app__navbar-links a{
+    transition: all 500ms ease ;
+}
+.app__navbar-links a:hover{
+    color: var(--color-grey);
+}
+.app__navbar-register{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.app__navbar-register div{
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-family: var(--font-alt);
+}
+
+.app__navbar-register div:hover{
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.app__navbar-bar{
+    width: 1px;
+    height: 20px;
+    background-color: var(--color-gray);
+    position: relative;
+    top: 5px;
+}
+.app__navbar-smallscreen{
+    display: flex;
+}
+.app__navbar-smallscreen_overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 5;
+}
+.app__navbar-smallscreen_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.app__navbar-close_overlay{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.app__navbar-smallscreen_links li{
+   list-style: none;
+   margin: 20px 0;
+}
+.app__navbar-smallscreen_links a{
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 2rem;
+}
+.app__navbar-smallscreen{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+  .app__navbar-links{
+    display: none;
+  }
+  .app__navbar-smallscreen{
+    display: flex;
+  }
+}
+@media screen and (max-width: 850px){
+    .app__navbar-smallscreen_links a{
+        font-size: 1.5rem;
+    }
+    .app__navbar-smallscreen_links li{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .app__navbar-register{
+        display: none;
+    }
+    
+    .app__navbar-smallscreen_links a{
+        font-size: 1.2rem;
+    }
+}

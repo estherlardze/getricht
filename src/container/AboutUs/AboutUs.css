@@ -1,0 +1,71 @@
+.app__aboutus{
+    background-color: var(--color-black);
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.app__aboutus-G_image{
+    position: absolute;
+    inset: 0;
+}
+.app__aboutus-G_image img{
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+.app__aboutus-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+.app__aboutus-content_image img{
+    height: 700px;
+    width: 90px;
+    margin: 2rem 3rem;
+}
+.app__aboutus-content_aboutus{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 4rem;
+}
+.app__aboutus-content_ourhistory{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+  }
+.p__opensans{
+    margin: 2rem 0;
+}
+
+
+@media screen and (max-width:1000px){
+ .app__aboutus-content{
+    font-size: 100px;
+    line-height: 150px;
+ }
+}
+
+@media screen and (max-width: 950px){
+ .app__aboutus-content{
+    flex-direction: column;
+ }
+ .app__aboutus-content_aboutus{
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+ }
+}
+@media screen and (max-width: 450px){
+ .app__aboutus-G_image img{
+   width: 100%;
+}
+}
+

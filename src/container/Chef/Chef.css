@@ -1,0 +1,139 @@
+.app__chef{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.app__chef-image{
+   width: 100%;
+}
+.app__chef-content{
+    display: flex;
+    flex-direction: column;
+}
+.app__chef-image img{
+    width: 500px;
+    height: 500px;
+    margin-right: 3rem;
+}
+.app__chef-content_quote{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;  
+}
+.app__chef-content_text{
+    font-style: italic;
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.app__chef-content_quote img{
+    width: 47px;
+    height: 35px;
+    margin: 0 1rem 1rem 0;
+}
+.app__chef-content h1{
+    margin-bottom: 2rem;
+}
+.app__chef-content_author{
+  margin-top: 3rem;
+}
+.app__chef-content_author h4{
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.app__chef-content_author p{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+}
+.app__chef-sign_image{
+    width: 235px;
+    height: 83px;
+    margin-top: 3rem;
+}
+@media screen and (min-width: 1500px){
+    .app__chef-image img{
+        width: 700px;
+        height: 700px;
+        margin-right: 0;
+    }
+    .app__chef-image{
+        flex: 1;
+        display: flex;
+        margin-right: 4rem;
+    }
+    .app__chef-content{
+        width: 100%;
+    }
+    .app__chef-content_text{
+        font-size: 23px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .app__chef{
+        flex-direction: column;
+    }
+    .app__chef-image img{
+        width: 100%;
+        margin-right: 3rem;
+    }
+    .app__chef-image {
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+    }
+    .app__chef-content_text{
+        display: flex;
+        flex-wrap: wrap;
+    }     
+}
+@media screen and (max-width: 650px){
+    .app__chef-image img{
+        width: 400px;
+        height: 500px;
+    }
+    .app__chef-image {
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width: 550px){
+    .app__chef-image img{
+        width: 350px;
+        height: 500px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .app__chef-content_author{
+        margin-top: 1rem;
+      }
+      .app__chef-content_author h4{
+        margin-bottom: 0;
+      }
+      .app__chef-image img{
+        width: 300px;
+        height: 450px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 350px){
+    .app__chef-image img{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:300px ){
+    .app__chef-sign_image{
+        width: 100%;
+      }
+}
